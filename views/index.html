@@ -28,6 +28,15 @@
                             <h5>
                                 Estimados clientes:
                             </h5>
+                            <p>El día lunes 12/9 la veterinaria permanecera cerrada.</p>
+                            <p>Los días martes 13/9 y miercoles 14/9 la veterinaria estara cerrada solo en el horario de la mañana.</p>
+                            <p>
+                                Dentro de la sala de espera y consultorio seguiremos usando barbijo.
+                            </p>
+                            <p>
+                                Y un solo acompañante por mascota.
+                            </p>
+
                             <p>
                                 Muchas gracias.
                             </p>
@@ -158,13 +167,13 @@
                 <div class="d-md-flex justify-content-between align-items-center">
                     <!--
                     <h3 class="mb-3 mb-md-0">Tenes alguna sugerencia? Envianos un mail</h3>
-                    
-                    
+                    -->
+                    <!-- Button trigger modal -->
+                    <!--
                     <button type="button" class="btn bg-white btn-lg mail-input" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                         Aqui!
                     </button>
                     -->
-
                     <!-- Modal -->
                     <div class="modal fade text-dark" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -205,7 +214,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Boxes -->
         <section class="p-5">
             <div class="container">
@@ -311,9 +320,9 @@
                                     <th scope="row">Yanina Crapanzano</th>
                                     <td>9:30–13:00 , 16:00–19:30</td>
                                     <td>9:30–13:00</td>
+                                    <td>---</td>
                                     <td>9:30–13:00</td>
-                                    <td>–––</td>
-                                    <td>16:00–19:30</td>
+                                    <td>9:30–13:00</td>
                                     <td>9:00–13:00</td>
                                     <td>Cerrado</td>
                                 </tr>
@@ -322,16 +331,16 @@
                                     <td>–––</td>
                                     <td>–––</td>
                                     <td>16:00–19:30</td>
-                                    <td>9:30–13:00</td>
+                                    <td>---</td>
                                     <td>9:30–13:00</td>
                                     <td>–––</td>
                                     <td>Cerrado</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Ezequiel Casas</th>
-                                    <td>–––</td>
+                                    <td>9:30-13:00</td>
                                     <td>16:00–19:30</td>
-                                    <td>–––</td>
+                                    <td>9:30-13:00</td>
                                     <td>16:00–19:30</td>
                                     <td>–––</td>
                                     <td>–––</td>
@@ -842,7 +851,12 @@
                                 <p class="card-text">
                                     Especialización en ecografía de pequeños animales en 2018.
                                 </p>
-                                
+                                <p class="card-text">
+                                    Curso de ecografía abdominal en pequeños animales. Julio 2022
+                                </p>
+                                <p class="card-text">
+                                    Manejo de las patologías desde el punto de vista nutricional con dietas caseras y BARF. Octubre 2022
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -938,16 +952,28 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-seven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                            data-bs-target="#question-nine" aria-expanded="false" aria-controls="flush-collapseNine">
                             ¿Cuánto sale la consulta a domicilio?
                         </button>
                     </h2>
-                    <div id="question-seven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                    <div id="question-nine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
                         data-bs-parent="#questions">
                         <div class="accordion-body">6000 pesos.</div>
                     </div>
                 </div>
-                
+                <!-- Item 10-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-ten" aria-expanded="false" aria-controls="flush-collapseTen">
+                            ¿Cuánto sale el control en consultorio?
+                        </button>
+                    </h2>
+                    <div id="question-ten" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">1500 pesos.</div>
+                    </div>
+                </div>
             </div>
                     <!-- Item2 -->
                     <div class="accordion-item">
@@ -1266,10 +1292,11 @@
             const form = document.getElementById('sendMailForm');
 
             //disable when the announcement is not needed
+            /*
             window.onload = () => {
                 document.querySelector('[data-bs-target="#succes-modal"]').click();
             }
-
+            */
             items.forEach((el) => {
                 const minPerSlide = 4
                 let next = el.nextElementSibling
