@@ -1,1 +1,1350 @@
-<meta http-equiv="refresh" content="0; url=views/index.html">
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="shortcut icon" href="public/img/Vet-Center-logo-32x32.png" type="image/x-icon">
+        <title>Vetcenter Escalada</title>
+    </head>
+
+    <body>
+        <!-- Anouncements Modal -->
+        <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#succes-modal">
+        
+        </button>
+        <div class="modal " id="succes-modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Anuncio</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <h5>
+                                Estimados clientes:
+                            </h5>
+                            <p>El día lunes 12/9 la veterinaria permanecera cerrada.</p>
+                            <p>Los días martes 13/9 y miercoles 14/9 la veterinaria estara cerrada solo en el horario de la mañana.</p>
+                            <p>
+                                Dentro de la sala de espera y consultorio seguiremos usando barbijo.
+                            </p>
+                            <p>
+                                Y un solo acompañante por mascota.
+                            </p>
+
+                            <p>
+                                Muchas gracias.
+                            </p>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Something went wrong modal -->
+        <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#wip-modal">
+        </button>
+        <div class="modal " id="wip-modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ooops! Algo salio mal...</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Esta funcionalidad está desactivada por mantenimiento, disculpe las molestias.
+                            <p></p>
+                            Si quiere comprar algún producto, puede hacerlo en nuestro local.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="bg-orange navbar text-dark navbar-expand-lg navbar-dark py-3 fixed-top">
+            <div class="container">
+                <a class="navbar-brand"> <img src="public/img/Vet-Center-logo-100.png " class="brand-logo" alt="Vetcenter logo"> Vetcenter Escalada</a>
+
+                <button class="navbar-toggler " 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navmenu"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto text-light">
+                        <li class="nav-item">
+                            
+                            <a href="#time" class="nav-link">
+                                <b class="text-light">Horarios</b>
+                            </a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a href="#store" class="nav-link">
+                                <b class="text-light">Tienda</b>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#map" class="nav-link">
+                                <b class="text-light">Contacto</b>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Showcase -->
+        <span class="anchor" id="top"></span>
+        <section class="bg-light text-dark mt-4 p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between row">
+                    <div class="col-lg-6 col-md-8 col-sm-12">
+                        <h1 class=" text-dark">17 años de experiencia al servicio de tu
+                            <span class="text-shadow-soft text-warning"> 
+                                mascota 
+                            </span>
+                            .
+                        </h1>
+                    </div>
+                    
+                    <div class="container col-lg-6 col-md-4 col-sm-12">
+                        
+                        <div id="carouselShowcase" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                            <div class="carousel-indicators">
+                                <button class="active" type="button" data-bs-target="#carouselShowcase" data-bs-slide-to="0" aria-current="true" aria-label="slide 1"></button>
+                                <button class="" type="button" data-bs-target="#carouselShowcase" data-bs-slide-to="1" aria-current="true" aria-label="slide 2"></button>
+                                
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item showcase-size active ">
+                                    <img src="public/img/vetcenter-frente.jpg"  class="d-block client-img showcase-img " alt="Frente del local">
+                                </div>
+                                <div class="carousel-item showcase-size">
+                                    <img src="public/img/vetcenter-interior.jpeg" class="d-block client-img showcase-img" alt="Interior del local">
+                                </div>
+                                
+                            </div>
+                            <button class="carousel-control-prev " type="button" data-bs-target="#carouselShowcase" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true">
+                                </span>
+                                <span class="visually-hidden">
+                                    Previous
+                                </span>
+                            </button>
+                            <button class="carousel-control-next " type="button" data-bs-target="#carouselShowcase" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true">
+                                </span>
+                                <span class="visually-hidden">
+                                    Next
+                                </span>
+                            </button>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Mails -->
+        <section class="bg-orange text-light p-5">
+            <div class="container">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <!--
+                    <h3 class="mb-3 mb-md-0">Tenes alguna sugerencia? Envianos un mail</h3>
+                    -->
+                    <!-- Button trigger modal -->
+                    <!--
+                    <button type="button" class="btn bg-white btn-lg mail-input" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                        Aqui!
+                    </button>
+                    -->
+                    <!-- Modal -->
+                    <div class="modal fade text-dark" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Contáctenos</h5>
+                            </div>
+                            <div class="modal-body">
+                                <!-- FORM  -->
+                                <div id="liveAlertPlaceholder"></div>
+                                <form method="POST" action="send" id="sendMailForm" class="row g-4 sendMail">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Apellido</label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="email" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="message" class="form-label input-medium">Mensaje</label>
+                                        <textarea class="form-control" rows="5" id="message" name="message" required placeholder="Su opinion nos ayuda a mejorar."></textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#exampleModalCenter">Cerrar</button>
+                                        <button type="submit" class="btn btn-primary">Enviar.</button>
+                                    </div>
+                                </form>
+                            </div>                            
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Boxes -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row text-center gy-4">
+
+                    <div class="col-md">
+                        <div class="card bg-softYellow ">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-calendar"></i>
+                                </div>
+                                <h3 class="card-title mb-3">
+                                    Horarios y Turnos
+                                </h3>
+                                <p class="card-text">
+                                    Revisa nuestros horarios y pedí un turno vía web.
+                                </p>
+                                <a href="#time" class="btn bg-orange">Saber más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-orange text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <h3 class="card-title mb-3">
+                                    Teleconsultas
+                                </h3>
+                                <p class="card-text">
+                                    ¿En que casos conviene realizar una teleconsulta?
+                                </p>
+                                <a href="#time" class="btn btn-light">Saber más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-softYellow ">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <h3 class="card-title mb-3">
+                                    ¿Que productos ofrecemos?
+                                </h3>
+                                <p class="card-text">
+                                    Mirá nuestros productos destacados o visita nuestra tienda web.
+                                </p>
+                                <a href="#store" class="btn bg-orange">Ver productos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-orange text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <h3 class="card-title mb-3">
+                                    ¿Donde estamos?
+                                </h3>
+                                <p class="card-text">
+                                    Consulta nuestro mapa para saber cómo llegar.
+                                </p>
+                                <a href="#map" class="btn btn-light">Visítenos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Times -->
+        <span class="anchor" id="time"></span>
+        <section id="learn" class="p-5 bg-softYellow">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="doggy-svg col-md-4 col-sm-12 p-5 bg-light">
+                        <img loading="lazy" src="public/img/undraw_good_doggy_4wfq.svg" class="img-fluid " alt="">
+                    </div>
+                    <div class="col-md-8 col-sm-12 ">
+                        <h2>
+                            ¿En que horarios trabajamos?                            
+                        </h2>
+                        <div class="table-responsive">
+                            
+                            <table class="table table-bordered bg-light">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Dra. / Dr.</th>
+                                    <th scope="col">Lunes</th>
+                                    <th scope="col">Martes</th>
+                                    <th scope="col">miércoles</th>
+                                    <th scope="col">jueves</th>
+                                    <th scope="col">viernes</th>
+                                    <th scope="col">sábado</th>
+                                    <th scope="col">Domingo</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Yanina Crapanzano</th>
+                                    <td>9:30–13:00 , 16:00–19:30</td>
+                                    <td>9:30–13:00</td>
+                                    <td>---</td>
+                                    <td>9:30–13:00</td>
+                                    <td>9:30–13:00</td>
+                                    <td>9:00–13:00</td>
+                                    <td>Cerrado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Mayra Roldán</th>
+                                    <td>–––</td>
+                                    <td>–––</td>
+                                    <td>16:00–19:30</td>
+                                    <td>---</td>
+                                    <td>9:30–13:00</td>
+                                    <td>–––</td>
+                                    <td>Cerrado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ezequiel Casas</th>
+                                    <td>9:30-13:00</td>
+                                    <td>16:00–19:30</td>
+                                    <td>9:30-13:00</td>
+                                    <td>16:00–19:30</td>
+                                    <td>–––</td>
+                                    <td>–––</td>
+                                    <td>Cerrado</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <a href="https://thebookingcloud.com/vetcenter/" target="_blank"class="btn mt-3 bg-light text-dark">
+                            <i class="bi bi-chevron-right">Quiero pedir un turno.</i>
+                        </a>
+                        <a class="btn mt-3 bg-light text-dark" data-bs-toggle="modal" data-bs-target="#tele-modal">
+                            <i class="bi bi-chevron-right">Quiero hacer una teleconsulta.</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade " id="tele-modal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered ">
+                <div class="modal-content " id="tele-modal-bg">
+                    <div class="modal-header">
+                        <h5 class="modal-title">¿Cuando solictar una teleconsulta?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="paw-ul">
+                            <li>El paciente no puede asistir al consultorio.</li>
+                            <li>El paciente esta muy lejos del centro veterinario.</li>
+                            <li>El paciente no necesita una revisacion manual.</li>
+                            <li>Querés una segunda opinion.</li>
+                        </ul>
+                        <p style="width: 60%;"> <strong>Coordinar por <u>mensaje</u> de Whatsapp (11 5164-4551) con la Dra. Crapanzano. </strong></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                        <!--<a href="https://thebookingcloud.com/vetcenter/" target="_blank" type="button" class="btn btn-primary">Pedir teleconsulta</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>          
+
+        <!-- Store carousel -->
+        <span class="anchor" id="store"></span>
+        <section class="p-5 text-dark store-div">
+            <div class="container text-center my-3">
+                <h2 class="font-weight-light store-title">Productos Destacados: </h2>
+                <h4 class="text-muted">Podes comprar a través de nuestra página web o en el local.</h3>
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div id="recipeCarousel" class="carousel store-carousel slide" data-bs-ride="carousel">
+                        <div class="store-carousel-inner carousel-inner" role="listbox">
+
+                            <div class="carousel-item store-carousel-item store-item active">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto1.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                            <p class="text-light fw-bold">Dormilón antiestres de peluche</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto2.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                            <p class="text-light fw-bold carousel-reduced-title-margin">Moises de corderito reversible grande</p>                                            
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto3.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                            <p class="text-light fw-bold">Moises ovalado corderito</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto4.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                            <p class="text-light fw-bold">Cucha royal</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto5.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                            <p class="text-light fw-bold">Mantas soft chicas</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto6.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                            <p class="text-light fw-bold">Iglú polar</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto7.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay card-img-overlay-lg">
+                                            <p class="text-light fw-bold">Mantas corderito con almohadón</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto8.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                            <p class="text-light fw-bold">Buzos sin capucha</p>
+                                            <!-- Update to remove link if product changes -->
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto9.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                            <p class="text-light fw-bold" style="margin-bottom: 0;">Buzos polar con capucha  </p>
+                                            <!-- Update to remove link if product changes -->
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto10.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                            <p class="text-light fw-bold">Polares sin capucha</p>
+                                            <!-- Update to remove link if product changes -->
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto11.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                            <p class="text-light fw-bold" >Collares de gato o perro chico</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto12.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay card-img-overlay-lg">
+                                            <p class="text-light fw-bold">Cardinas 4 medidas</p>
+                                            <!-- Update to remove link if product changes -->
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto13.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay card-img-overlay-lg">
+                                            <p class="text-light fw-bold">Correa extendible(perro chico)</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto14.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay card-img-overlay-lg">
+                                            <p class="text-light fw-bold">Animalitos con movimiento</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto15.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay card-img-overlay-lg">
+                                            <p class="text-light fw-bold carousel-reduced-title-margin">Huesos de goma snack grande para rellenar</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto16.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay card-img-overlay-lg">
+                                            <p class="text-light fw-bold">Repuesto bolsitas x 3</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto17.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay card-img-overlay-lg">
+                                            <p class="text-light fw-bold" style="margin-bottom: 0;">Hueso rígido plano</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto18.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay card-img-overlay-lg">
+                                            <p class="text-light fw-bold" style="margin-bottom: 0;">Hueso snack azul para rellenar</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto19.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay card-img-overlay-lg">
+                                            <p class="text-light fw-bold" style="margin-bottom: 0;">Huesos sólidos irrompibles</p>
+                                            <!-- Update to remove link if product changes -->
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto20.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay card-img-overlay-lg">
+                                            <p class="text-light fw-bold" style="margin-bottom: 0;">Huesos de goma dispensador</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item store-carousel-item store-item ">
+                                <div class="col-md-3">
+                                    <div class="card card-store">
+                                        <div class="card-img store-img-container">
+                                            <img loading="lazy" src="public/img/producto21.jpg" class="img-fluid store-img">
+                                        </div>
+                                        <div class="card-img-overlay card-img-overlay-lg">
+                                            <p class="text-light fw-bold" style="margin-bottom: 0;">Correas de cadena mango de nylon</p>
+                                            <button class="btn btn-outline-light" type="button" >
+                                                <a style="text-decoration: none;color: inherit;" href="https://www.instagram.com/vetcenter_escalada/" target="_blank">
+                                                Consultar <i class="bi bi-arrow-right"></i> 
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev store-carousel-control-prev bg-half-transparent width-5" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next store-carousel-control-next bg-half-transparent width-5" href="#recipeCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+                <h5 class="mt-2 fw-light text-center store-link ">
+                        Puede ver todos nuestros productos en nuestra    
+                    <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#wip-modal"> 
+                        Tienda <i class="bi bi-arrow-up-right-circle"></i> 
+                    </button>
+                    
+                </h5>
+            </div>
+        </section>
+
+        <!-- Clients -->
+        <span class="anchor" id="clients"></span>
+        <section class="p-5 bg-orange">
+            <div class="container">
+                <h2 class="text-center"> Algunos de nuestros pacientes. </h2>
+                <div id="carouselClients" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                    <div class="carousel-indicators">
+                        <button class="active" type="button" data-bs-target="#carouselClients" data-bs-slide-to="0" aria-current="true" aria-label="slide 1"></button>
+                        <button class="" type="button" data-bs-target="#carouselClients" data-bs-slide-to="1" aria-current="true" aria-label="slide 2"></button>
+                        <button class="" type="button" data-bs-target="#carouselClients" data-bs-slide-to="2" aria-current="true" aria-label="slide 3"></button>
+                        <button class="" type="button" data-bs-target="#carouselClients" data-bs-slide-to="3" aria-current="true" aria-label="slide 4"></button>
+                        <button class="" type="button" data-bs-target="#carouselClients" data-bs-slide-to="4" aria-current="true" aria-label="slide 5"></button>
+                        <button class="" type="button" data-bs-target="#carouselClients" data-bs-slide-to="5" aria-current="true" aria-label="slide 6"></button>
+                        <button class="" type="button" data-bs-target="#carouselClients" data-bs-slide-to="6" aria-current="true" aria-label="slide 7"></button>
+                        <button class="" type="button" data-bs-target="#carouselClients" data-bs-slide-to="7" aria-current="true" aria-label="slide 8"></button>
+                        <button class="" type="button" data-bs-target="#carouselClients" data-bs-slide-to="8" aria-current="true" aria-label="slide 9"></button>
+                        <button class="" type="button" data-bs-target="#carouselClients" data-bs-slide-to="9" aria-current="true" aria-label="slide 10"></button>
+                        <button class="" type="button" data-bs-target="#carouselClients" data-bs-slide-to="10" aria-current="true" aria-label="slide 11"></button>
+                        <button class="" type="button" data-bs-target="#carouselClients" data-bs-slide-to="11" aria-current="true" aria-label="slide 12"></button>
+                    </div>
+                    <div class="carousel-inner bg-softYellow">
+                        <div class="carousel-item  active clients">
+                            <img loading="lazy" src="public/img/mascota1.jpeg" class="d-block client-img" alt="mascota 1">
+                            <div class="client-name-center text-light"><strong>Alpha</strong></div>
+                        </div>
+                        <div class="carousel-item clients">
+                            <img loading="lazy" src="public/img/mascota2.jpeg" class="d-block client-img" alt="mascota 2">
+                            <div class="client-name-left text-light"><strong>Raiza</strong></div>
+                        </div>
+                        <div class="carousel-item clients short-center">
+                            <img loading="lazy" src="public/img/mascota3.jpeg" class="d-block client-img" alt="mascota 3">
+                        </div>
+                        <div class="carousel-item clients">
+                            <img loading="lazy" src="public/img/mascota4.jpeg" class="d-block client-img" alt="mascota 4">
+                            <div class="client-name-center text-light"><strong>Oke</strong></div>
+                        </div>
+                        <div class="carousel-item clients">
+                            <img loading="lazy" src="public/img/mascota5.jpeg" class="d-block client-img" alt="mascota 5">
+                            <div class="client-name-center text-light"><strong>Hans</strong></div>
+                        </div>
+                        <div class="carousel-item clients">
+                            <img loading="lazy" src="public/img/mascota6.jpeg" class="d-block client-img" alt="mascota 6">
+                            <div class="client-name-center text-light"><strong>Freddie y Hanna</strong></div>
+                        </div>
+                        <div class="carousel-item clients">
+                            <img loading="lazy" src="public/img/mascota7.jpg" class="d-block client-img" alt="mascota 7">
+                            <div class="client-name-center text-light"><strong>Tania</strong></div>
+                        </div>
+                        <div class="carousel-item clients short-center">
+                            <img loading="lazy" src="public/img/mascota8.jpg" class="d-block client-img" alt="mascota 8">
+                            <div class="client-name-left text-light"><strong>Tommy, Homero, Bella y Bonnie</strong></div>
+                        </div>
+                        <div class="carousel-item clients">
+                            <img loading="lazy" src="public/img/mascota9.jpeg" class="d-block client-img" alt="mascota 9">
+                            <div class="client-name-center text-light"><strong>Thor</strong></div>
+                        </div>
+                        <div class="carousel-item clients">
+                            <img loading="lazy" src="public/img/mascota10.jpeg" class="d-block client-img" alt="mascota 10">
+                            <div class="client-name-center text-light"><strong>Malta</strong></div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselClients" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true">
+                        </span>
+                        <span class="visually-hidden">
+                            Previous
+                        </span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselClients" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true">
+                        </span>
+                        <span class="visually-hidden">
+                            Next
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- The Team -->
+        <section id="team" class="p-5 bg-softYellow">
+            <div class="container">
+                <h2 class="text-center text-dark">¿Quiénes somos?:</h2>
+                <p class="lead text-center text-dark mb-5">
+                    Conoce a nuestro equipo de profesionales.
+                </p>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img loading="lazy" src="public/img/team2.jpg" class="rounded-circle mb-3 px-5 img-fluid" alt="Foto de empleado." onerror="this.src='public/img/undraw_female_avatar_w3jk.svg'"/>
+                                <h3 class="card-title mb-3"> Yanina Crapanzano </h3>
+                                <p class="card-text">
+                                    Recibida de veterinaria en la UBA en el año 2004.
+                                </p>
+                                <p class="card-text">
+                                    Trabajo en la práctica privada hasta que en el 28 de septiembre de 2016 abrió Vet Center.
+                                </p>
+                                <p class="card-text">
+                                    Especialización en  laboratorio de pequeños animales en el 2010.
+                                </p>
+                                <p class="card-text">
+                                    Especialización en cirugía general en 2017.
+                                </p>
+                                <p class="card-text">
+                                    Especialización en ecografía de pequeños animales en 2018.
+                                </p>
+                                <p class="card-text">
+                                    Curso de ecografía abdominal en pequeños animales. Julio 2022
+                                </p>
+                                <p class="card-text">
+                                    Manejo de las patologías desde el punto de vista nutricional con dietas caseras y BARF. Octubre 2022
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-grey">
+                            <div class="card-body text-center">
+                                <img loading="lazy" src="public/img/team1.jpg" class="rounded-circle mb-3 px-5 img-fluid" alt="Foto de empleado. " onerror="this.src='public/img/undraw_male_avatar_323b.svg'"/>
+                                <h3 class="card-title mb-3"> Ezequiel Casas </h3>
+                                <p class="card-text">
+                                    Recibido de veterinario en la UBA en el año 2011.
+                                </p>
+                                <p class="card-text">
+                                    Realiza clínica general/ clínica en urgencias y emergencias/ anestesia general hasta el presente año.
+                                </p>
+                                <p class="card-text">
+                                    2013 Curso de Dermatología en pequeños animales.
+                                </p>
+                                <p class="card-text">
+                                    2017 Curso de cirugía general de pequeños animales.
+                                </p>
+                                <p class="card-text">
+                                    2018 Curso de anestesiología en pequeños animales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img loading="lazy" src="public/img/team3.jpeg" class="rounded-circle mb-3 px-5 img-fluid" alt="Foto de empleado." onerror="this.src='public/img/undraw_female_avatar_w3jk.svg'"/>
+                                <h3 class="card-title mb-3"> Mayra Roldán </h3>
+                                <p class="card-text">
+                                    Recibida de veterinaria en el año 2021 en la UBA.
+                                </p>
+                                <p class="card-text">
+                                    Realiza clínica general, clínica en urgencias y emergencias.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Question Accordion -->
+        <span class="anchor" id="questions"></span>
+        <section class="p-5 bg-orange">
+            <div class="container">
+                <h2 class="text-center mb-4">
+                    Preguntas Frecuentes.
+                </h2>
+                <div class="accordion accordion-flush" id="questions">
+
+                    <!-- Item1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" >
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" aria-expanded="false" aria-controls="flush-collapseOne">
+                                ¿Cuánto sale la consulta?
+                            </button>
+                        </h2>
+                        <div id="question-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                            <div class="accordion-body">3000 pesos.</div>
+                        </div>
+                    </div>
+                    <!-- Item 7-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question-seven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                ¿Cuánto sale la tele consulta?
+                            </button>
+                        </h2>
+                        <div id="question-seven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                            data-bs-parent="#questions">
+                            <div class="accordion-body">2500 pesos.</div>
+                        </div>
+                    </div>
+                    <!-- Item 8-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-eigth" aria-expanded="false" aria-controls="flush-collapseEigth">
+                            ¿Por donde se pide la tele consulta / consulta a domicilio?
+                        </button>
+                    </h2>
+                    <div id="question-eigth" class="accordion-collapse collapse" aria-labelledby="flush-headingEigth"
+                    data-bs-parent="#questions">
+                    <div class="accordion-body">Por Whatsapp ( 11-5164-4551 ) .</div>
+                </div>
+                <!-- Item 9-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-nine" aria-expanded="false" aria-controls="flush-collapseNine">
+                            ¿Cuánto sale la consulta a domicilio?
+                        </button>
+                    </h2>
+                    <div id="question-nine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">6000 pesos.</div>
+                    </div>
+                </div>
+                <!-- Item 10-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-ten" aria-expanded="false" aria-controls="flush-collapseTen">
+                            ¿Cuánto sale el control en consultorio?
+                        </button>
+                    </h2>
+                    <div id="question-ten" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">1500 pesos.</div>
+                    </div>
+                </div>
+            </div>
+                    <!-- Item2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" >
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                ¿Se puede pagar con tarjeta?
+                            </button>
+                        </h2>
+                        <div id="question-two" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#questions">
+                            <div class="accordion-body">Si, débito, crédito y mercado pago.</div>
+                        </div>
+                    </div>
+
+                    <!-- Item3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" >
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" aria-expanded="false" aria-controls="flush-collapseThree">
+                                ¿Cuánto duran los turnos?
+                            </button>
+                        </h2>
+                        <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+                            <div class="accordion-body">20 minutos.</div>
+                        </div>
+                    </div>
+
+                    <!-- Item4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" >
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four" aria-expanded="false" aria-controls="flush-collapsefour">
+                                ¿Dónde puedo concurrir a una guardia nocturna, domingos o feriados?
+                            </button>
+                        </h2>
+                        <div id="question-four" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#questions">
+                            <div class="accordion-body">A un centro 24 hs. Puede ser el Cevede en Hipólito Yrigoyen 8017 Banfield, tel. 4242-2254 o el hospital de lanus en Hipólito Yrigoyen al 4957, tel. 4247-0279 que son los más cercanos.</div>
+                        </div>
+                    </div>
+
+                        <!-- Item5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" >
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five" aria-expanded="false" aria-controls="flush-collapsefive">
+                                ¿Cuántas personas pueden concurrir a la consulta?
+                            </button>
+                        </h2>
+                        <div id="question-five" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#questions">
+                            <div class="accordion-body">Solo una, salvo que se solicite venir acompañado.</div>
+                        </div>
+                    </div>
+
+                    <!-- Item6 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" >
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-six" aria-expanded="false" aria-controls="flush-collapsesix">
+                                ¿Que especialidades tienen?
+                            </button>
+                        </h2>
+                        <div id="question-six" class="accordion-collapse collapse" aria-labelledby="flush-headingsix" data-bs-parent="#questions">
+                            <div class="accordion-body">Clínica médica, cirugía general y traumatología. Cardiologia. Laboratorio. Ecografía. Consultas a domicilio.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviews" class="p-5 ">
+            <div class="container">
+                <h2 class="text-center text-dark">Reviews:</h2>
+                <p class="lead text-center text-dark mb-5">
+                    Estas son algunas de las opioniones de nuestros clientes.
+                </p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img loading="lazy" src="public/img/undraw_male_avatar_323b.svg" class="rounded-circle mb-3 img-fluid w-50" alt="Foto de cliente." onerror="this.src='public/img/undraw_male_avatar_323b.svg'"/>
+                                <h3 class="card-title mb-3"> Nicolás C. </h3>
+                                <p class="card-text">
+                                    Profesionales que se preocupan por nuestros animalitos y los atienden con excelencia, todas mis mascotas fueron y serán atendidas allí.
+                                </p>
+                                <font color="#ffc107">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-grey">
+                            <div class="card-body text-center">
+                                <img loading="lazy" src="public/img/undraw_male_avatar_323b.svg" class="rounded-circle mb-3 img-fluid w-50" alt="Foto de cliente." onerror="this.src='public/img/undraw_female_avatar_w3jk.svg'"/>
+                                <h3 class="card-title mb-3"> Aldana G. </h3>
+                                <p class="card-text">
+                                    La mejor atención siempre. Fueron los veterinarios de cabecera de todas nuestras mascotas y nos acompañaron con cada partida y cada nuevo integrante. Su prioridad siempre es el bienestar del animal.
+                                </p>
+                                <font color="#ffc107">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img loading="lazy" src="public/img/undraw_male_avatar_323b.svg" class="rounded-circle mb-3 img-fluid w-50" alt="Foto de cliente." onerror="this.src='public/img/undraw_male_avatar_323b.svg'"/>
+                                <h3 class="card-title mb-3"> Martin G. </h3>
+                                <p class="card-text">
+                                    Buena atención y precios accesibles
+                                </p>
+                                <font color="#ffc107">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-grey">
+                            <div class="card-body text-center">
+                                <img loading="lazy" src="public/img/undraw_female_avatar_w3jk.svg" class="rounded-circle mb-3 img-fluid w-50" alt="Foto de cliente." onerror="this.src='public/img/undraw_female_avatar_w3jk.svg'"/>
+                                <h3 class="card-title mb-3"> Leticia </h3>
+                                <p class="card-text">
+                                    Excelente atención. La doctora Yanina es un amor. Recomiendo 100 % este lugar para atender y bañar a las mascotas.
+                                </p>
+                                <font color="#ffc107">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reviews carousel, only on xs -->
+        <span class="anchor" id="clients"></span>
+        <section class="p-5 reviews-carousel">
+            <div class="container">
+                <h2 class="text-center"> Estas son algunas de las opioniones de nuestros clientes. </h2>
+                <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                    <div class="carousel-indicators">
+                        <button class="active" type="button" data-bs-target="#carouselReviews" data-bs-slide-to="0" aria-current="true" aria-label="slide 1"></button>
+                        <button class="" type="button" data-bs-target="#carouselReviews" data-bs-slide-to="1" aria-current="true" aria-label="slide 2"></button>
+                        <button class="" type="button" data-bs-target="#carouselReviews" data-bs-slide-to="2" aria-current="true" aria-label="slide 3"></button>
+                        <button class="" type="button" data-bs-target="#carouselReviews" data-bs-slide-to="3" aria-current="true" aria-label="slide 4"></button>
+                    </div>
+                    <div class="carousel-inner bg-softYellow">
+                        <div class="carousel-item active">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img loading="lazy" src="public/img/undraw_male_avatar_323b.svg" class="rounded-circle mb-3 img-fluid w-50"
+                                        alt="Foto de cliente." onerror="this.src='public/img/undraw_male_avatar_323b.svg'" />
+                                    <h3 class="card-title mb-3"> Nicolás C. </h3>
+                                    <p class="card-text">
+                                        Profesionales que se preocupan por nuestros animalitos y los atienden con excelencia, todas mis mascotas fueron
+                                        y serán atendidas allí.
+                                    </p>
+                                    <font color="#ffc107">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card bg-grey">
+                                <div class="card-body text-center">
+                                    <img loading="lazy" src="public/img/undraw_male_avatar_323b.svg" class="rounded-circle mb-3 img-fluid w-50"
+                                        alt="Foto de cliente." onerror="this.src='public/img/undraw_female_avatar_w3jk.svg'" />
+                                    <h3 class="card-title mb-3"> Aldana G. </h3>
+                                    <p class="card-text">
+                                        La mejor atención siempre. Fueron los veterinarios de cabecera de todas nuestras mascotas y nos acompañaron con
+                                        cada partida y cada nuevo integrante. Su prioridad siempre es el bienestar del animal.
+                                    </p>
+                                    <font color="#ffc107">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img loading="lazy" src="public/img/undraw_male_avatar_323b.svg" class="rounded-circle mb-3 img-fluid w-50"
+                                        alt="Foto de cliente." onerror="this.src='public/img/undraw_male_avatar_323b.svg'" />
+                                    <h3 class="card-title mb-3"> Martin G. </h3>
+                                    <p class="card-text">
+                                        Buena atención y precios accesibles
+                                    </p>
+                                    <font color="#ffc107">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card bg-grey">
+                                <div class="card-body text-center">
+                                    <img loading="lazy" src="public/img/undraw_female_avatar_w3jk.svg" class="rounded-circle mb-3 img-fluid w-50"
+                                        alt="Foto de cliente." onerror="this.src='public/img/undraw_female_avatar_w3jk.svg'" />
+                                    <h3 class="card-title mb-3"> Leticia </h3>
+                                    <p class="card-text">
+                                        Excelente atención. La doctora Yanina es un amor. Recomiendo 100 % este lugar para atender y bañar a las
+                                        mascotas.
+                                    </p>
+                                    <font color="#ffc107">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselReviews" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true">
+                        </span>
+                        <span class="visually-hidden">
+                            Previous
+                        </span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselReviews" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true">
+                        </span>
+                        <span class="visually-hidden">
+                            Next
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Info+map -->
+        <span class="anchor" id="map"></span>
+        <section class="p-5 bg-softYellow">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md col-sm-12">
+                        <h2 class="text-center mb-4">Informacion de contacto</h2>
+                        
+                        <ul class="list-group list-group lead pt-3">
+                            <li class="list-group-item  ">
+                                <span > <strong>Telefono: </strong>4242-1125</span>
+                            </li>
+                            
+                        </ul>
+                        <ul class="list-group list-group lead pt-3">
+                            <li class="list-group-item ">
+                                <span ><strong>Direccion: </strong>Dr. Melo 4442 - Remedios de Escalada</span>
+                            </li>
+                        </ul>
+                        <ul class="list-group list-group lead pt-3">
+                            <li class="list-group-item ">
+                                <span ><strong>Mail: </strong>vetcenter_escalada@yahoo.com</span>
+                            </li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal lead pt-4">
+                            <li class="list-group-item">
+                                <a href="https://www.instagram.com/vetcenter_escalada/" target="_blank" class="link-media"><i class="bi bi-instagram"></i> Instagram</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://www.facebook.com/Vet-Center-escalada-109736900389877/" target="_blank" class="link-media"><i class="bi bi-facebook"></i> Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md col-sm-12">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d344.6854735851025!2d-58.39729133564898!3d-34.7248754367677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd8a014c2327%3A0x3d16cfabba239ae!2sVet%20Center!5e0!3m2!1ses!2sar!4v1626892243871!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p-5 bg-orange text-white text-center position-relative">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2021 Vetcenter Escalada</p>
+                <a href="#top" class="position-absolute bottom-0 end-0 p-5">
+                    <i class="bi bi-arrow-up-circle text-light h1"></i>
+                </a>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <script>
+            let items = document.querySelectorAll('.store-carousel .store-item');            
+            const form = document.getElementById('sendMailForm');
+
+            //disable when the announcement is not needed
+            /*
+            window.onload = () => {
+                document.querySelector('[data-bs-target="#succes-modal"]').click();
+            }
+            */
+            items.forEach((el) => {
+                const minPerSlide = 4
+                let next = el.nextElementSibling
+                for (var i=1; i<minPerSlide; i++) {
+                    if (!next) {
+                        // wrap carousel by using first child
+                        next = items[0]
+                    }
+                    let cloneChild = next.cloneNode(true)
+                    el.appendChild(cloneChild.children[0])
+                    next = next.nextElementSibling
+                }
+            });
+            
+            
+        </script>
+    </body>
+
+</html>
